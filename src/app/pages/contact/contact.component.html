@@ -1,0 +1,24 @@
+<div class="grid">
+  <div class="col-6" style="padding: 10px; margin: auto; text-align: center;">
+      <p-card header="Contacto">
+        <div style="text-align: left;">
+          <hr>
+          <br>
+          <label for="nombre">Nombre completo</label> <br><br>
+          <input type="text" name="nombre" placeholder="Nombre completo" pInputText /> <br><br>
+          <label for="email">Email</label> <br><br>
+          <input type="email" name="email" placeholder="Email" pInputText /> <br><br>
+          <label for="telefono">Teléfono</label> <br><br>
+          <p-inputMask name="telefono" mask="(999) 999-9999"
+                        placeholder="(999) 999-9999"></p-inputMask> <br><br>
+          <label for="mensaje">Mensaje</label> <br><br>
+          <textarea name="mensaje" rows="5" cols="50" style="display: block;"
+                    [defaultValue]="mensajeDefault" pInputTextarea></textarea> <br>
+          <hr>
+          <br>
+          <button type="button" pButton (click)="showSuccess()" label="Enviar"
+                  class="p-button-success mb-2"></button>
+        </div>
+      </p-card>
+  </div>
+</div>
